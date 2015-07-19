@@ -1,0 +1,41 @@
+{
+  "name": "open-shortcut",
+  "version": "0.0.0",
+  "description": "Open the URL from a web shortcut file in the browser",
+  "license": "MIT",
+  "repository": "sindresorhus/open-shortcut",
+  "author": {
+    "name": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "sindresorhus.com"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "shortcut",
+    "alias",
+    "url",
+    "uri",
+    "desktop",
+    "webloc",
+    "web",
+    "internet",
+    "open",
+    "opn",
+    "browser"
+  ],
+  "dependencies": {
+    "opn": "^3.0.2",
+    "shortcut-url": "^1.0.0"
+  },
+  "devDependencies": {
+    "ava": "0.0.4"
+  }
+}
