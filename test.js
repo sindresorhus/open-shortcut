@@ -1,11 +1,7 @@
-'use strict';
-var test = require('ava');
-var fn = require('./');
+import test from 'ava';
+import m from './';
 
-test(function (t) {
-	t.plan(1);
-
-	fn('fixture/google', function (err) {
-		t.assert(!err, err);
-	});
+test(async t => {
+	const cp = await m('fixture/google');
+	t.deepEqual(cp.spawnargs, ['open', 'https://google.com']);
 });
