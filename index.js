@@ -1,14 +1,5 @@
 'use strict';
-var shortcutUrl = require('shortcut-url');
-var opn = require('opn');
+const shortcutUrl = require('shortcut-url');
+const opn = require('opn');
 
-module.exports = function (filepath, cb) {
-	shortcutUrl(filepath, function (err, url) {
-		if (err) {
-			cb(err);
-			return;
-		}
-
-		opn(url, {wait: false}, cb);
-	});
-};
+module.exports = fp => shortcutUrl(fp).then(url => opn(url, {wait: false}));
