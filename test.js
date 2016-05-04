@@ -2,6 +2,7 @@ import test from 'ava';
 import m from './';
 
 test(async t => {
-	const cp = await m('fixture/google');
-	t.deepEqual(cp.spawnargs, ['open', 'https://google.com']);
+	const [cmd, arg] = (await m('fixture/google')).spawnargs;
+	t.regex(cmd, /open$/);
+	t.is(arg, 'https://google.com');
 });
