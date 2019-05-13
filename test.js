@@ -1,8 +1,8 @@
 import test from 'ava';
-import m from './';
+import openShortcut from '.';
 
-test(async t => {
-	const [cmd, arg] = (await m('fixture/google')).spawnargs;
-	t.regex(cmd, /open$/);
-	t.is(arg, 'https://google.com');
+test('main', async t => {
+	const [command, firstArgument] = (await openShortcut('fixture/google')).spawnargs;
+	t.regex(command, /open$/);
+	t.is(firstArgument, 'https://google.com');
 });

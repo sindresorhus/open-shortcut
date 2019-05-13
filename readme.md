@@ -6,7 +6,7 @@
 ## Install
 
 ```
-$ npm install --save open-shortcut
+$ npm install open-shortcut
 ```
 
 
@@ -15,9 +15,10 @@ $ npm install --save open-shortcut
 ```js
 const openShortcut = require('open-shortcut');
 
-openShortcut('google').then(() => {
+(async () => {
+	await openShortcut('google');
 	console.log('URL opened in the browser');
-});
+})();
 ```
 
 In the above example it will look for the following file:
@@ -29,15 +30,16 @@ In the above example it will look for the following file:
 
 ## API
 
-### openShortcut(filepath)
+### openShortcut(filePath)
 
 Returns a Promise for the child process.
 
-#### filepath
+#### filePath
 
 Type: `string`
 
 Filepath to the web shortcut.
+
 Leave out the extension for cross-platform compatibility.
 
 

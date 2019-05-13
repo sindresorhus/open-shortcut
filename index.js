@@ -1,5 +1,5 @@
 'use strict';
 const shortcutUrl = require('shortcut-url');
-const opn = require('opn');
+const open = require('open');
 
-module.exports = fp => shortcutUrl(fp).then(url => opn(url, {wait: false}));
+module.exports = async filePath => open(await shortcutUrl(filePath));
