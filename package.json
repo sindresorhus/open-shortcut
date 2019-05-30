@@ -31,7 +31,7 @@
 	],
 	"dependencies": {
 		"open": "^6.3.0",
-		"shortcut-url": "^2.0.0"
+		"shortcut-url": "^3.0.0"
 	},
 	"devDependencies": {
 		"ava": "^1.4.1",

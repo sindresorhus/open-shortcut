@@ -38,7 +38,7 @@ Returns a Promise for the child process.
 
 Type: `string`
 
-Filepath to the web shortcut.
+File path to the web shortcut.
 
 Leave out the extension for cross-platform compatibility.
 
@@ -47,8 +47,3 @@ Leave out the extension for cross-platform compatibility.
 
 - [open-shortcut-cli](https://github.com/sindresorhus/open-shortcut-cli) - CLI for this module
 - [shortcut-url](https://github.com/sindresorhus/shortcut-url) - Get the URL from a [web shortcut](https://en.wikipedia.org/wiki/File_shortcut) file
-
-
-## License
-
-MIT © [Sindre Sorhus](https://sindresorhus.com)
