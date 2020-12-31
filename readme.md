@@ -1,4 +1,4 @@
-# open-shortcut [![Build Status](https://travis-ci.org/sindresorhus/open-shortcut.svg?branch=master)](https://travis-ci.org/sindresorhus/open-shortcut)
+# open-shortcut
 
 > Open the URL from a [web shortcut](https://en.wikipedia.org/wiki/File_shortcut) file in the browser
 
