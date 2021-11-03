@@ -1,5 +1,5 @@
 import test from 'ava';
-import openShortcut from '.';
+import openShortcut from './index.js';
 
 test('main', async t => {
 	const [command, firstArgument] = (await openShortcut('fixture/google')).spawnargs;

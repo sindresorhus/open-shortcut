@@ -1,5 +1,6 @@
-'use strict';
-const shortcutUrl = require('shortcut-url');
-const open = require('open');
+import shortcutUrl from 'shortcut-url';
+import open from 'open';
 
-module.exports = async filePath => open(await shortcutUrl(filePath));
+export default async function openShortcut(filePath) {
+	return open(await shortcutUrl(filePath));
+}

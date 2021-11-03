@@ -2,23 +2,19 @@
 
 > Open the URL from a [web shortcut](https://en.wikipedia.org/wiki/File_shortcut) file in the browser
 
-
 ## Install
 
+```sh
+npm install open-shortcut
 ```
-$ npm install open-shortcut
-```
-
 
 ## Usage
 
 ```js
-const openShortcut = require('open-shortcut');
+import openShortcut from 'open-shortcut';
 
-(async () => {
-	await openShortcut('google');
-	console.log('URL opened in the browser');
-})();
+await openShortcut('google');
+console.log('URL opened in the browser');
 ```
 
 In the above example it will look for the following file:
@@ -27,21 +23,19 @@ In the above example it will look for the following file:
 - Linux: `google.desktop`
 - Windows: `google.url`
 
-
 ## API
 
 ### openShortcut(filePath)
 
-Returns a Promise for the child process.
+Returns a Promise for the [child process](https://nodejs.org/api/child_process.html#class-childprocess) and resolves when the shortcut has opened.
 
 #### filePath
 
 Type: `string`
 
-File path to the web shortcut.
+The file path to the web shortcut.
 
 Leave out the extension for cross-platform compatibility.
-
 
 ## Related
 
